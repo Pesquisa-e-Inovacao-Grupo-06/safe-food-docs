@@ -117,7 +117,7 @@ CREATE TABLE SafeFood_Avaliacao(
 
 /* EXEMPLO DE CADASTRO DE ESTABELECIMENTO */
 insert into SafeFood_Usuario values('72fe51df-359d-42f-9b46-c40d3f45714c', 'Angolas', 'angolano@gmail.com', CONVERT(VARCHAR(20), HASHBYTES('md5', '23564')), '+55 (11)967584657', 'Sun Mar 19 04:28:58 BRT 2023', null);
-insert into SafeFood_Estabelecimento values('72fe51df-359d-42f-2346-c40d3f45714c', '72fe51df-359d-42f-9b46-c40d3f45714c', '12345678901234', '02736-123', 'Rua Augusta', 'Consolacao', '254', 'Sao Paulo', null, null);
+insert into SafeFood_Estabelecimento values('72fe51df-359d-42f-2346-c40d3f45714c', '72fe51df-359d-42f-9b46-c40d3f45714c', '12345678901234', '02736-123', 'Rua Augusta', 'Consolacao', '254', 'Sao Paulo','SP', null, null);
 
 /* EXEMPLO DE LOGIN DE ESTABELECIMENTO */
 select SafeFood_Usuario.IdUsuario from SafeFood_Usuario where EmailUsuario = 'angolano@gmail.com' and SenhaUsuario = CONVERT(VARCHAR(20), HASHBYTES('md5', '23564'));
