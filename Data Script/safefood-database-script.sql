@@ -21,6 +21,7 @@ CREATE TABLE SafeFood_Estabelecimento (
 	BairroEstabelecimento VARCHAR(30) NOT NULL,
 	NumeroLocalEstabelecimento VARCHAR(5) NOT NULL,
 	CidadeEstabelecimento VARCHAR(30) NOT NULL,
+	EstadoEstabelecimento CHAR(2) NOT NULL,
 	DescricaoEstabelecimento VARCHAR(100),
 	EstabelecimentoAberto BIT,
 	PRIMARY KEY(IdEstabelecimento),
@@ -153,7 +154,7 @@ SELECT * FROM SafeFood_Estabelecimento;
 SELECT * FROM SafeFood_Endereco_Consumidor;
 SELECT * FROM SafeFood_Usuario;
 
-/* DELETAR TABELAS (NÃO TROCAR A ORDEM) */
+/* DELETAR TABELAS (Nï¿½O TROCAR A ORDEM) */
 DROP TABLE SafeFood_Restricao_Produto;
 DROP TABLE SafeFood_Restricao_Consumidor;
 DROP TABLE SafeFood_Avaliacao;
